@@ -102,3 +102,31 @@ okno prohlížeče:
 > 800px - 4 obrázky vedle sebe
 > 1000px - 6 obrázky vedle sebe
 */
+
+.galerie {
+		display: flex;
+		flex-wrap: wrap;
+	}
+
+@media (min-width: 400px) {
+	.foto {
+		width: calc(100% / 2);
+	}
+}
+
+@media (min-width: 600px) {
+	.foto {
+		width: calc(100% / 3);
+	}
+}
+
+@media (min-width: 800px) {
+	.foto {
+		width: calc(100% / 4);
+	}
+}
+
+@media (min-width: 1000px) {
+	.foto {
+		width: calc(100% / 6)}
+}
